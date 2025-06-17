@@ -1,0 +1,43 @@
+[
+    {
+        "id": 0,
+        "name": "Basic Package",
+        "price": "499",
+        "list": [
+            "30sec Duration",
+            "Script Writing",
+            "Custom Artwork",
+            "Background Music",
+            "HD Format Video",
+            "Dedicated Support"
+        ]
+    },
+    {
+        "id": 0,
+        "name": "Classic Package",
+        "price": "799",
+        "list": [
+            "30sec Duration",
+            "Script Writing",
+            "Professional Voice-over & SFX",
+            "Hand-drawn Illustrations",
+            "Unlimited Revisions",
+            "HD Format Video",
+            "Dedicated Support"
+        ]
+    },
+    {
+        "id": 0,
+        "name": "Premium Package",
+        "price": "999",
+        "list": [
+            "30sec Duration",
+            "Script Writing",
+            "Professional Voice-over & SFX",
+            "Custom 2D Characters",
+            "Unlimited Revisions",
+            "HD Format Video",
+            "Dedicated Support"
+        ]
+    }
+]

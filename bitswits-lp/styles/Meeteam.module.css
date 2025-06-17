@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "MicrogrammaD";
+    src: url('../public/fonts/MicrogrammaD.otf');
+    font-display: swap;
+}
+
+.meetteam {
+    background-image: url('../public/meetourteam/bg-meetourteam.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0;
+    font-family: "MicrogrammaD";
+    height: 100vh;
+}
+
+.logo {
+    width: 12%;
+    height: auto
+}
+
+.meetteam h1 {
+    font-size: 45px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 2px;
+    font-family: "MicrogrammaD";
+    -webkit-text-stroke-color: #d82e59;
+    /* Can be changed in the live sample */
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+}
+
+.meetteam h4 {
+    color: #d82e59;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "MicrogrammaD";
+    padding-top: 10px;
+    font-weight: 700;
+}
+
+.meetteam p {
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "MicrogrammaD";
+    padding-top: 0;
+    font-weight: 600;
+    letter-spacing: 5px
+}
+
+.flipBoxBack p {
+    color: #fff;
+    font-size: 14px;
+    text-transform: lowercase;
+    padding-top: 0;
+    font-weight: 600;
+    font-family: "Poppins";
+    letter-spacing: 1px
+}
+
+/* FlipCard.module.css */
+.flipBox {
+    perspective: 1000px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 250px;
+}
+
+.flipBoxInner {
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.flipBox:hover .flipBoxInner {
+    transform: rotateY(180deg);
+}
+
+.flipBoxFront,
+.flipBoxBack {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.flipBoxBack {
+    display: flex;
+    transform: rotateY(180deg);
+    border: 1px solid #d82e59;
+    height: 340px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Add any additional styling as needed */
+.hoverEffect {
+    /* Add hover effect styles here */
+}
+@media (min-width:768px) and (max-width:991px) {
+    .logo {
+        margin-top: 15%;
+        width: 30%;
+        height: auto
+    }
+    .meetteam {
+        height: 140vh;
+    }
+    .flipBox {
+        perspective: 1000px;
+        position: relative;
+        width: 100%;
+        height: 450px;
+        padding: 0px 0 250px;
+    }
+    .meetteam.slick-slide img {
+        display: inline !important;
+    }
+    .meetteam h1 {
+        font-size: 45px;
+        margin-top:5%;
+    }
+    
+    .meetteam h4 {
+        font-size: 20px;
+    }
+    .flipBoxBack {
+        border: 2px solid #d82e59;
+        height: 450px;
+    }
+    .flipBoxBack p {
+        color: #fff;
+        font-size: 20px;
+        text-transform: lowercase;
+        padding-top: 0;
+        font-weight: 600;
+        font-family: "Poppins";
+        letter-spacing: 1px
+    }
+}
+@media (min-width:300px) and (max-width:767px) {
+    .logo {
+        margin-top: 5%;
+        width: 30%;
+        height: auto
+    }
+    .meetteam {
+        height: 340vh;
+    }
+    .flipBox {
+        perspective: 1000px;
+        position: relative;
+        width: 100%;
+        height: 450px;
+        padding: 0 0 250px;
+    }
+    .meetteam.slick-slide img {
+        display: inline !important;
+    }
+    .meetteam h1 {
+        font-size: 40px;
+        margin-top:0%;
+    }
+    
+    .meetteam h4 {
+        font-size: 20px;
+    }
+    .flipBoxBack {
+        border: 2px solid #d82e59;
+        height: 450px;
+    }
+    .flipBoxBack p {
+        color: #fff;
+        font-size: 20px;
+        text-transform: lowercase;
+        padding-top: 0;
+        font-weight: 600;
+        font-family: "Poppins";
+        letter-spacing: 1px
+    }
+}

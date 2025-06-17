@@ -1,0 +1,44 @@
+{
+  "name": "bitswits-new",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && purgecss --config purgecss.config.js --output ./out",
+    "start": "next start",
+    "lint": "next lint",
+    "analyze": "cross-env ANALYZE=true next build"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "^14.0.3",
+    "@react-icons/all-files": "^4.1.0",
+    "@vercel/analytics": "^1.1.2",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.3.0",
+    "date-fns": "^2.30.0",
+    "google-spreadsheet": "^4.0.2",
+    "googleapis": "^126.0.1",
+    "jquery": "^3.7.1",
+    "locomotive-scroll": "^5.0.0-beta.8",
+    "next": "^13.5.4",
+    "nodemailer": "^6.9.4",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.4",
+    "react-countup": "^6.4.2",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.9.0",
+    "react-responsive": "^9.0.2",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.0.5",
+    "webpack-bundle-analyzer": "^4.10.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.25",
+    "purgecss": "^5.0.0",
+    "purgecss-from-html": "^6.0.0-alpha.0"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
