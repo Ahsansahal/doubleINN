@@ -1,0 +1,112 @@
+.banner {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+.BannerImg {
+  position: absolute;
+  z-index: -9999;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.banner h1 {
+  font-size: 40px;
+  line-height: 50px;
+}
+.banner p {
+  font-size: 16px;
+  line-height: 25px;
+}
+.w75 {
+  width: 75%;
+}
+.w85 {
+  width: 85%;
+}
+
+
+.embla {
+  max-width: 48rem;
+  margin: auto;
+  --slide-height: 30rem;
+  --slide-spacing: 1rem;
+  --slide-size: 25%;
+  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, rgba(247, 152, 29, 1) 51%, rgba(0, 212, 255, 0) 100%);
+  height: 80%;
+}
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-x pinch-zoom;
+  margin-top: calc(var(--slide-spacing) * -1);
+  height: calc(var(--slide-spacing) + var(--slide-height));
+  flex-direction: column;
+  align-items: center;
+}
+.embla__slide {
+  flex: 0 0 var(--slide-size);
+  min-height: 0;
+  padding-top: var(--slide-spacing);
+}
+
+@media screen and (max-width: 1399.98px) {
+  .banner h1 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .banner p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .banner h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .banner p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .embla__slide {
+    flex: 0 0 var(--slide-size);
+    min-height: 0;
+    padding-top: var(--slide-spacing);
+    width: 80%;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .banner h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .banner {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .banner h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .w75 {
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .banner h1 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .w75 {
+    width: 100% !important;
+  }
+}
